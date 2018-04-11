@@ -9,15 +9,19 @@ using namespace std;
 //execute ./test1
 int main()
 {
-    string str = " maybe 3 * 6 2578*20+";
+    string str = "add number 1 number 2";
 
     // Tokens
     vector<pair <string, string>> v
     {
         {"[0-9]+" , "NUMBERS"} ,
-        {"[a-z]+" , "IDENTIFIERS"},
-        {"\\*|\\+", "OPERATORS"}
-        //still need store and load
+        {"add", "ADDITION"},
+        {"multiply", "MULTIPLY"},
+        {"save", "SAVE"},
+        {"load", "LOAD"},
+        {"number", "NUMBERS"}
+
+        
     };
 
     string reg;
